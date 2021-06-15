@@ -1,0 +1,325 @@
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0px;
+}
+
+header{
+    background-color: #eee;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+    max-width: 500px;
+    margin-right: 25px;
+}
+
+.navlistitem{
+    text-decoration: none;
+    padding: 14px 8px;
+    color: black;
+    margin: 27px;
+}
+
+main{
+    margin-top: 95px;
+}
+
+h1{
+    margin: 40px auto 25px auto;
+    text-align: center;
+}
+
+input[type=email]{
+    margin: auto;
+    text-align: left;
+    height: 25px;
+    width: 260px;
+    display: block;
+}
+
+.button{
+    color: black;
+    height: 30px;
+    max-width: 150px;
+    font-size: 15px;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    border: 0;
+    background-color: #f1c40f;
+    margin: 10px auto;
+}
+
+section{
+    margin: 30px auto;
+}
+
+#featuresection{
+    margin-top: 65px;
+}
+
+.info{
+    display: flex;
+    margin: 20px auto;
+}
+
+.fa{
+    display: inline-block;
+    text-rendering: auto;
+    font: normal normal normal 100px/1 FontAwesome;
+}
+
+.fa-fire::before{
+    content: "\f06d";
+}
+
+.fa-3x{
+    size: 20em;
+    font-size: 20em;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+.features{
+    display: block;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.featuresinfo{
+    display: block;
+    margin-top: 5px;
+}
+
+.yutubeviedo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.packageinfo{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+}
+
+.package{
+    margin: 10px;
+    border: solid #000 1px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    max-width: 300px;
+}
+
+.packagetitle{
+    background-color:#ddd ;
+    color: black;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+.price{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.choiceslist{
+    margin: 15px 0;
+    padding: 0;
+}
+
+.choices{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.button{
+    background-color: #f1c40f;
+    height: 40px;
+    margin: 15px auto;
+    padding: 0 30px;
+    font-weight: 400;
+    border: 0;
+    cursor: pointer;
+    border: 2px;
+}
+
+footer{
+    background-color: #ddd;
+    margin: 20px auto 0px auto;
+    width: 100%;
+    max-width: 955px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Serviceslist{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-direction: row;
+    padding: 10px;
+    margin: 0px;
+}
+
+.Services{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+}
+
+.copyrightinfo{
+    margin: 0;
+    padding: 5px;
+    align-self: flex-end;
+    color: #444;
+}
+
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 3.5px;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 3.5px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger > div::after{
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger >div{
+    transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger >div::before,
+.menu-wrap .toggler:checked + .hamburger >div::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger >div{
+    transform: rotate(225deg);
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:800px){  
+    
+.packageinfo{
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+ .package{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+ }
+ 
+ header{
+     justify-content: space-evenly;
+ }
+
+.navlist{
+    list-style: none;
+    flex-direction: column;
+}
+
+}
